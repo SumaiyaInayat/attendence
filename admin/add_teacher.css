@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background: rgb(226, 223, 223); 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+  padding: 20px;
+
+}
+
+.container .title{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+ 
+  color:#08dbad;
+  text-transform: uppercase;
+  text-align: center;
+}
+.container .form{
+  width: 100%;
+}
+
+.container .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.container .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 16px;
+}
+
+.container .form .inputfield .input,
+.container .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.container form .inputfield .input:focus,
+.container form .inputfield .textarea:focus{
+  border: 1px solid #08dbad
+}
+.container .form .btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 18px; 
+  border: 0px;
+  background:#08dbad;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 18px;
+  outline: none;
+}
+.container .form .btn:hover{
+  background-color:#86e7d2;
+}
+
+
+/*  */
+.title1 {
+  color: #757575;
+  font-size: 18px;
+    margin: 10px 0;
+    border-left: 3px solid #27ae60;
+    padding-left: 10px;
+  }
+  
+.container1 {
+    padding: 0px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+ul.group {
+    column-count: 2;
+    column-gap: 2rem;
+    list-style: none;
+  }
+ul.group {
+    padding: 5px 30px;
+    margin: 8px;
+  }
+ul.group li{
+  font-size: 16px;
+  padding: 8px;
+  }
+  
+.container1 input[type="checkbox"] {
+    display: none;
+  }
+  
+.container1 label {
+  color: #757575;
+  position: relative;
+  }
+  
+.container1 label::before {
+    content: "";
+    background: url("check.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+  
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  }
+  
+.container1 input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+  }
+  
+.container1 label::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+  }
+
+  @media (max-width:540px) {
+    .container .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .container .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .container .form .inputfield.terms{
+      flex-direction: row;
+    }
+    .container1 {
+      height: 70vh;
+    }
+    ul{
+      column-count: 1;
+      column-gap: 1rem;
+      list-style: none;
+    }
+    .container .form .btn {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  @media (max-width:450px) {
+    .container{
+      width: 120%;
+    }
+  }
+  @media (max-width:370px) {
+    .container{
+      width: 150%;
+    }
+  }

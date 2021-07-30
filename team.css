@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    
+    width: 100vw;
+    padding-top: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.moderator-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+h1{
+    color: rgb(8, 65, 70);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 4px;
+    background: rgb(18, 248, 171);
+    margin-bottom: 40px;
+}
+.card{
+    width: 280px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 30px;
+}
+
+.inner-box{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+.card-front{
+    background-position: center;
+    background-size: cover;
+}
+
+.front-1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(team1.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.front-2{
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(team2.png);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.dev-name {
+    display: inline-block;
+    width: 180px;
+    padding: 0.5rem 0;
+    margin-top: 305px;
+    border-radius: 4px;
+    color: rgb(18, 248, 171);
+    font-size: 22px;
+    font-weight: 500;
+    background-color: rgb(1, 41, 41);
+    transition: transform 1s;
+}
+
+
+.card-back{
+    display: flex;
+    transform:rotateX(180deg);
+    background-color: #b8c2d8be;
+}
+.card-back-content {
+    margin: auto;
+    padding-top: 1rem;
+}
+.card-back-content p {
+    font-size: 22px;
+    margin-bottom: 3rem;
+}
+
+.card:hover  .inner-box{
+    transform: rotateX(-180deg);
+}
+
+.card:hover  .span{
+    transform: translateY(140px);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.social-media img {
+    height: 65px;
+    transition: all 0.3s ease-in-out 0.1s;
+
+}
+.social-media img:hover {
+    cursor: pointer;    
+    transform:translateY(-15px);
+}
+

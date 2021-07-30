@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    margin-right:2vw;
+    margin-left:2vw;
+    margin-top: 10vh;
+
+}
+th{
+    padding-bottom: 1vh;
+}
+td {
+    text-align: center;
+    padding-bottom: 1vh;
+
+
+  }
+td a{
+    text-decoration: none;
+}

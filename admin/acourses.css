@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+	background: #f1f1f1;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+.container
+{
+	position: relative;
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container .card
+{
+	position: relative;
+	width: 340px;
+	height: 410px;
+	background: #fff;
+	margin: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.2);/*to steal*/
+	transition: 0.5s;
+}
+
+.container .card .circle
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(180px at center 0);
+	text-align: center;
+}
+.container .card .circle h2
+{
+	color: #fff;
+	font-size: 4.5em;
+	padding: 30px 0;
+}
+.container .card .content
+{
+	position: absolute;
+	bottom: 10px;
+	padding: 5px; 
+	text-align: center;
+}
+.container .card .content p
+{
+	color: #000;
+	font-size: 15px;
+}
+.container .card .content a
+{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	background: #000;
+	color: #fff;
+	border-radius: 40px;
+	text-decoration: none;
+	margin-top: 20px;
+}
+.work-header
+{   
+    font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a
+{
+    background: rgb(5, 82, 52);
+}
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a
+{
+    background:#ee1b24;
+}
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a
+{
+    background: #715809;
+}
+.container .card:nth-child(4) .circle,
+.container .card:nth-child(4) .content a
+{
+    
+	background:#003153;
+}
+.container .card:nth-child(5) .circle,
+.container .card:nth-child(5) .content a
+{
+    background: #f1c40f;
+
+}
+.container .card:nth-child(6) .circle,
+.container .card:nth-child(6) .content a
+{
+    background: #cf246a;
+}
+.container .card:nth-child(7) .circle,
+.container .card:nth-child(7) .content a
+{
+    background: #fa7f06;
+}
+.container .card:nth-child(8) .circle,
+.container .card:nth-child(8) .content a
+{
+    
+    background: rgb(155, 15, 190);
+}
+.container .card:nth-child(9) .circle,
+.container .card:nth-child(9) .content a
+{
+
+	background:#85c700
+}
+.container .card:nth-child(10) .circle,
+.container .card:nth-child(10) .content a
+{
+	/* background:#106d5a */
+	/* background:#fdd619 */
+	/* background:#17b895 */
+	background:#0056d2
+}
+img{
+    width: 120px;
+    height: 120px;
+    filter: invert(1);
+}

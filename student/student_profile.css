@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home-section{
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+	padding-top: 85px;
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+.container .card1
+{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 25vw;
+	height: 45vh;
+	background: #fff;
+	margin: 15px;
+    padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+.container .card2
+{   
+	
+	width: 50vw;
+	height: 45vh;
+	background: #fff;
+	margin: 15px;
+    padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+   
+}
+.container .card3
+{   
+	width: 25vw;
+	height: 32vh;
+	background: #fff;
+	margin: 15px;
+    margin-top: 0;
+    padding: 10px;
+    padding-top: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container .card4
+{   display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #1abc9c;
+    font-size: 18px;
+    font-weight: 550;
+	position: relative;
+	width: 50vw;
+	height: 32vh;
+	background: #fff;
+	margin: 15px;
+    margin-top: 0;
+    padding: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.admin-profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+}
+.edit-btn{
+    background-color:#fff;
+    color: #1abc9c;
+    border: 2px solid #1abc9c;
+    font-weight:500;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 35px;
+    padding: 6px;
+    width: 100px;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color:#1abc9c;
+    color: #fff;
+    
+}
+.icons{
+ 
+    margin: 3px 0px;
+    width: 25px;
+    height: 25px;
+   
+}
+.icons-name{
+    
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    line-height: 40px;
+    }
+    th{
+    padding: 5px;
+    text-align: left;
+    }
+    td {
+    padding: 5px;
+    text-align: center;
+    
+    }
+.name{
+    font-weight: bold;
+    font-size: 20px;
+}
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+    background-color:  #1abc9c!important;
+    border: 1px solid #1abc9c!important;
+   
+}
+
+progress {
+   
+    border:1px solid #1abc9c;
+    background-color: #1abc9c;
+    width: 40vw;
+}
+
+
+@media(max-width:1000px){
+    
+    table{
+        width: 100%;
+    }
+    table, th, td {
+        line-height: 60px;
+        padding:0;
+        }
+        .container .card2
+        {   
+       
+            padding: 10px;
+            width: 60vw;
+              
+        }.container .card4
+        {   
+       
+            padding: 10px;
+            width: 60vw;
+              
+        }
+    
+}
+
+
+@media(max-width:910px){
+    .name{
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+@media(max-width:800px){
+    .home-section{
+        height: 200vh;
+        
+    }
+    .name{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    table{
+        width: 100%;
+    }
+    table, th, td {
+        line-height: 70px;
+        padding:0;
+        }
+        .container .card1
+        {   
+            
+            width: 60vw;
+            height: 50vh;       
+        }
+    .container .card2
+    {   
+        margin-left: 5px;
+        padding: 5px;
+        width: 90vw;
+        height: 50vh;       
+    }
+    .container .card3
+    {   
+       
+        width: 60vw;
+        height: 36vh;
+         
+    }
+    .container .card4
+    {   
+        margin-left: 5px;
+        padding: 5px;
+        width: 90vw;
+        height: 40vh;  
+           
+    }
+}
+@media(max-width:530px){
+    th{
+        font-size: 14px;
+    }
+    table,td {
+        font-size: 14px;
+        }
+    .container .card2{
+        padding: 0;
+        height: 50vh;
+        
+    }
+
+}
+@media(max-width:470px){
+    th{
+        font-size: 12px;
+    }
+    table,td {
+        
+        font-size: 12px;
+        }
+    .container .card2{
+        padding: 0;
+        height: 50vh;
+        
+    }
+}
+@media(max-width:410px){
+    table, th, td {
+        line-height: 50px;
+        padding:3px;
+        }
+    th{
+        font-size: 10px;
+    }
+    td{
+        text-align: left;
+    }
+    table,td {
+            
+        font-size: 10px;
+    }
+    .container .card2{
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;        
+    }
+    
+}
